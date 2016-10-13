@@ -111,6 +111,7 @@
                                        @"bloodPressureDiastolicValue" : @([bloodPressureDiastolicValue.quantity doubleValueForUnit:unit]),
                                        @"startDate" : [sample valueForKey:@"startDate"],
                                        @"endDate" : [sample valueForKey:@"endDate"],
+                                       @"bundleIdentifierAppSource" : [sample valueForKey:@"bundleIdentifierAppSource"],
                                       };
 
                 [data addObject:elem];
