@@ -82,11 +82,15 @@
 
                     NSString *startDateString = [RCTAppleHealthKit buildISO8601StringFromDate:sample.startDate];
                     NSString *endDateString = [RCTAppleHealthKit buildISO8601StringFromDate:sample.endDate];
-
+                    NSString *bundleIdentifierAppSourceString = sample.sourceRevision.source.bundleIdentifier;
+                    
+                    
                     NSDictionary *elem = @{
                             @"value" : @(value),
                             @"startDate" : startDateString,
                             @"endDate" : endDateString,
+                            @"bundleIdentifierAppSource" : bundleIdentifierAppSourceString,
+                            
                     };
 
                     [data addObject:elem];
@@ -138,11 +142,13 @@
 
                     NSString *startDateString = [RCTAppleHealthKit buildISO8601StringFromDate:sample.startDate];
                     NSString *endDateString = [RCTAppleHealthKit buildISO8601StringFromDate:sample.endDate];
-
+                    NSString *bundleIdentifierAppSourceString = sample.sourceRevision.source.bundleIdentifier;
+                    
                     NSDictionary *elem = @{
                                            @"correlation" : sample,
                                            @"startDate" : startDateString,
                                            @"endDate" : endDateString,
+                                           @"bundleIdentifierAppSource" : bundleIdentifierAppSourceString,
                                            };
 
                     [data addObject:elem];
