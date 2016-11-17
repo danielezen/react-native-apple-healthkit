@@ -17,7 +17,6 @@ const PERMISSIONS = {
 	ActiveEnergyBurned: 'ActiveEnergyBurned',
 	FlightsClimbed: 'FlightsClimbed',
 	NikeFuel: 'NikeFuel',
-	AppleExerciseTime: 'AppleExerciseTime',
 	DietaryEnergy: 'DietaryEnergy',
 	HeartRate: 'HeartRate',
   BodyTemperature: 'BodyTemperature',
